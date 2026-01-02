@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title></title>
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
+    <link rel="stylesheet" href="css/swiper.css" type="text/css">
+    <link rel="stylesheet" href="css/css.css" type="text/css">
+</head>
+
+<body class="index">
+    <div class="header">
+        <a href=""><img src="image/logo-min-2x.png" class="logo" /></a>
+        <div class="header-middle">
+            <div class="cur">
+                <h3><a href="">Home</h3>
+            </div>
+            <div>
+                <h3><a href="">Company</a></h3>
+            </div>
+            <div>
+                <h3><a href="">Services</a></h3>
+            </div>
+            <div>
+                <h3><a href="">Success Stories</a></h3>
+            </div>
+            <div>
+                <h3><a href="">Contacts</a></h3>
+            </div>
+        </div>
+        <div class="header-right"></div>
+    </div>
+    <div id="Home_fullpage" class="main">
+        <div class="section home_ban ">
+            <div class="content">
+                <!-- ========== 开始修改：添加点击事件 ========== -->
+                <div class="down-arrow-area" id="down-arrow-btn">
+                    <img src="image/down-arrow.png" class="down-arrow">
+                </div>
+                <!-- ========== 结束修改 ========== -->
+                <div class="title">Spurt Srorao Group</div>
+                <div class="text">Where others see barriers, we see the fastest track to growth.</div>
+            </div>
+        </div>
+        <div class="section home_ban2 ">
+            <!--swiper-container-->
+            <div class="swiper-container" id="swiper-container-2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide swiper-slide-1 active" id="chapter-1">
+                    </div>
+                    <div class="swiper-slide" id="chapter-2">
+                    </div>
+                    <div class="swiper-slide" id="chapter-3">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-toggle-btn" id="swiper-toggle-btn2">▶</div>
+            </div>
+        </div>
+        <div class="section footer">
+            <img src="image/ASGlogo-2x.png" class="logo" />
+            <div class="slogan">Global Insight. Local Execution. Enduring Growth.</div>
+            <div class="input-group ">
+                <input type="text" placeholder="Enter your E-mail" />
+                <img src="image/right-arrow.png" />
+            </div>
+            <div class="bottom-bar">
+                <a href="">Home</a>
+                <a href="">Company</a>
+                <a href="">Services</a>
+                <a href="">Success Stories</a>
+                <a href="">Contacts</a>
+            </div>
+            <div class="bqxx">
+                © 2025  . All Rights Reserved.
+            </div>
+        </div>
+    </div>
+
+    <!-- 将所有JS文件放在body底部，按正确顺序 -->
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/jquery.fullPage.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/swiper.animate1.0.2.min.js"></script>
+    <script src="js/typing.js"></script>
+    <script src="js/contentManager.js"></script>
+
+    <!-- ========== 开始修改：添加自定义JS ========== -->
+    <script>
+        // 添加down-arrow点击事件
+        document.addEventListener('DOMContentLoaded', function () {
+
+
+            // 1. 添加down-arrow点击事件
+            const downArrow = document.getElementById('down-arrow-btn');
+            if (downArrow) {
+                downArrow.style.cursor = 'pointer';
+                downArrow.addEventListener('click', function () {
+                    console.log('Down arrow clicked');
+                    // 滚动到第二块
+                    if (typeof $.fn.fullpage !== 'undefined') {
+                        $.fn.fullpage.moveTo(2); // 第二块的索引是2（从1开始）
+                    }
+                });
+            }
+
+        });
+    </script>
+    <!-- ========== 结束修改 ========== -->
+
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
