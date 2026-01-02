@@ -1,5 +1,5 @@
 Multi-Container Presentation System
-./screenshot/screenshot-2.jpg
+![项目截图](./screenshot/screenshot-2.jpg)
 Interactive presentation with synchronized carousel and typewriter effects
 
 🎯 Overview
