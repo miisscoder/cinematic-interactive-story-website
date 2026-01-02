@@ -6,7 +6,7 @@ Interactive presentation with synchronized carousel and typewriter effects
 A JavaScript-based interactive presentation system that synchronizes Swiper.js carousels, Fullpage.js scrolling, and typewriter animations with audio effects.
 
 ## 🔗 Demo
-![Live Demo](https://github.com/miisscoder/cinematic-interactive-story-website) | ![GitHub Repository](https://github.com/miisscoder/cinematic-interactive-story-website)
+[Live Demo](https://github.com/miisscoder/cinematic-interactive-story-website) | [GitHub Repository](https://github.com/miisscoder/cinematic-interactive-story-website)
 
 ## 🏗️ Core Architecture
 ### 1. MultiContainerManager (contentManager.js)
