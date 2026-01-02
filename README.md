@@ -1,15 +1,15 @@
-####Multi-Container Presentation System
+#### Multi-Container Presentation System
 ![项目截图](./screenshot/screenshot-2.jpg)
 Interactive presentation with synchronized carousel and typewriter effects
 
-##🎯 Overview
+## 🎯 Overview
 A JavaScript-based interactive presentation system that synchronizes Swiper.js carousels, Fullpage.js scrolling, and typewriter animations with audio effects.
 
-##🔗 Demo
+## 🔗 Demo
 Live Demo | GitHub Repository
 
-##🏗️ Core Architecture
-#1. MultiContainerManager (contentManager.js)
+## 🏗️ Core Architecture
+# 1. MultiContainerManager (contentManager.js)
 Manages 3 chapters (chapter1, chapter2, chapter3) as Swiper slides
 
 Controls sequential playback with typing animations
@@ -18,7 +18,7 @@ Integrates with Swiper.js (slideTo) and Fullpage.js (moveTo)
 
 Provides play/pause/stop controls
 
-#2. Typewriter Engine (typing.js)
+# 2. Typewriter Engine (typing.js)
 Word-by-word or char-by-char typing animations with configurable speed
 
 Audio preloading system for seamless sound effects
@@ -27,14 +27,14 @@ Memory management and task cleanup
 
 Multiple interrupt modes (stop, abort, override)
 
-#3. Main Controller (index.js)
+# 3. Main Controller (index.js)
 Initializes all components (Swiper, Fullpage, Manager)
 
 Handles pagination clicks and UI interactions
 
 Manages audio preloading on user interaction
 
-🔧 Key Features
+## 🔧 Key Features
 Synchronized Playback
 
 javascript
@@ -64,7 +64,7 @@ Swiper pagination for manual chapter navigation
 
 Fullpage scroll for section changes
 
-##📦 Tech Stack
+## 📦 Tech Stack
 Core: Vanilla JavaScript (ES6+)
 
 UI Libraries: Swiper.js (carousel), Fullpage.js (scrolling)
@@ -73,7 +73,7 @@ Animations: Custom typewriter engine with audio
 
 Dependencies: jQuery (for Fullpage integration)
 
-##🚀 Quick Start
+## 🚀 Quick Start
 javascript
 # 1. Define content
 const contentMap = {
@@ -86,7 +86,7 @@ const manager = MultiContainerManager(containers, contentMap);
 # 3. Start playback
 const controls = manager.getControlHandle();
 controls.togglePlay(); // Start automatic presentation
-##💡 Technical Highlights
+## 💡 Technical Highlights
 Modular Design: Separated concerns (manager, typewriter, controller)
 
 Performance: Audio preloading, DOM cleanup, memory management
