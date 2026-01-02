@@ -1,5 +1,5 @@
 Multi-Container Presentation System
-https://github.com/miisscoder/cinematic-interactive-story-website/blob/main/screenshot/screenshot-2.jpg
+[https://github.com/miisscoder/cinematic-interactive-story-website/blob/main/screenshot/screenshot-2.jpg]
 Interactive presentation with synchronized carousel and typewriter effects
 
 🎯 Overview
